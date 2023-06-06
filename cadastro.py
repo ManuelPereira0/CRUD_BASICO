@@ -1,5 +1,5 @@
-from funcoes import *
-from funcoes.crud import *
+from funcoes.funcoes import *
+from funcoes.crud.crud import *
 
 while True:
     linha()

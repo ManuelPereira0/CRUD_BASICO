@@ -1,4 +1,4 @@
-from funcoes.conexao import cursor, conexao
+from funcoes.conexao.conexao import cursor, conexao
 
 
 def ler():
@@ -12,10 +12,6 @@ def ler():
         nome = resultado[i]["nome"]
         idade = resultado[i]["idade"]
         print(f'{id:<1}  {nome:<30} {idade:<40}')
-    # for v in resultado:
-    #     for d in v.values():
-    #         print(f'{d:>10}', end='')
-    #     print()
 
 
 def cadastrar(nome, idade):
@@ -40,8 +36,5 @@ def mostrar(id):
     comando = f'select * from pessoas where id = {id}'
     cursor.execute(comando)
     resultado = cursor.fetchall()
-    # for i in range(0,len(resultado)):
     nome = resultado[0]
-    # idade = resultado[]
-    # print(f'{nome:<30}')
     return nome 

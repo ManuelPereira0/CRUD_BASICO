@@ -2,6 +2,7 @@ def linha(tam = 40):
     linha = print('-' * tam)
     return linha
 
+
 def leiaInt(msg):
     ok = False
     valor = 0
